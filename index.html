@@ -3376,48 +3376,47 @@ body.works-embed {
 }
 
 /* Pricing showcase approved 2026-09-29 */
-
-.pricing-showcase { --p-bg:#f0e9fa; --p-ink:#251c3e; --p-muted:#605873; --p-deep:#24193f; --p-lime:#cef039; --p-line:#ddd2ea; font-family:Inter,Arial,sans-serif; color:var(--p-ink); background:var(--p-bg); border-radius:28px; width:calc(100% - 64px); max-width:1336px; margin:0 auto 80px; padding:48px 32px; }
+.pricing-showcase { --p-bg:#f0e9fa; --p-ink:#251c3e; --p-muted:#5e5571; --p-deep:#24193f; --p-lime:#cef039; --p-line:#d7c9e9; font-family:'Bricolage Grotesque','Poppins',sans-serif; color:var(--p-ink); background:var(--p-bg); border-radius:32px; width:calc(100% - 64px); max-width:1336px; margin:0 auto 80px; padding:74px clamp(28px,5vw,68px) 68px; }
 .pricing-showcase * { box-sizing:border-box; }
-.pricing-showcase .heading { text-align:center; margin:0 auto 36px; max-width:700px; }
-.pricing-showcase .eyebrow { font-size:12px; font-weight:700; letter-spacing:.15em; color:#6742b3; text-transform:uppercase; margin:0 0 12px; }
-.pricing-showcase h2 { font-family:'Bricolage Grotesque',Inter,Arial,sans-serif; font-size:clamp(34px,4vw,54px); letter-spacing:-.045em; line-height:1.04; margin:0 0 14px; }
+.pricing-showcase .heading { text-align:center; margin:0 auto 48px; max-width:780px; }
+.pricing-showcase .eyebrow { font-size:14px; font-weight:700; letter-spacing:.11em; color:#6540b7; text-transform:uppercase; margin:0 0 16px; }
+.pricing-showcase h2 { font-size:clamp(39px,4.8vw,64px); font-weight:700; letter-spacing:-.045em; line-height:1.03; margin:0 0 20px; }
 .pricing-showcase h2 em { font-style:normal; color:#6735d6; }
-.pricing-showcase .heading>p:last-child { color:var(--p-muted); font-size:15px; line-height:1.5; margin:0; }
-.pricing-showcase .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; max-width:970px; margin:auto; }
-.pricing-showcase .plan { background:#fff; border-radius:23px; padding:30px; display:flex; flex-direction:column; min-width:0; box-shadow:0 4px 16px #24193f09; }
-.pricing-showcase .plan.featured { background:var(--p-deep); color:#fff; }
-.pricing-showcase .top { min-height:150px; }
-.pricing-showcase .badge { display:inline-block; border-radius:100px; padding:7px 11px; background:#efe6fb; color:#5230a8; font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase; margin-bottom:16px; }
+.pricing-showcase .heading>p:last-child { color:var(--p-muted); font-size:19px; line-height:1.5; margin:0; }
+.pricing-showcase .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; max-width:1210px; margin:auto; }
+.pricing-showcase .plan { background:#fff; border-radius:28px; padding:38px 40px 36px; display:flex; flex-direction:column; min-width:0; box-shadow:0 12px 35px rgba(36,25,63,.08); }
+.pricing-showcase .plan.featured { background:var(--p-deep); color:#fff; box-shadow:0 16px 42px rgba(36,25,63,.18); }
+.pricing-showcase .top { min-height:178px; }
+.pricing-showcase .badge { display:inline-block; border-radius:100px; padding:8px 13px; background:#efe6fb; color:#5230a8; font-size:12px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; margin-bottom:20px; }
 .pricing-showcase .featured .badge { background:var(--p-lime); color:var(--p-deep); }
-.pricing-showcase .plan h3 { font-family:'Bricolage Grotesque',Inter,Arial,sans-serif; font-size:29px; letter-spacing:-.035em; line-height:1.05; margin:0 0 9px; }
-.pricing-showcase .intro { color:var(--p-muted); font-size:14px; line-height:1.48; margin:0; }
-.pricing-showcase .featured .intro { color:#d7cde8; }
-.pricing-showcase .price { display:flex; align-items:baseline; flex-wrap:wrap; gap:9px; margin:20px 0 15px; }
-.pricing-showcase .old { color:#90879e; font-size:15px; text-decoration:line-through; }
-.pricing-showcase .price strong { font-size:39px; letter-spacing:-.055em; white-space:nowrap; }
-.pricing-showcase .period { color:var(--p-muted); font-size:14px; }
+.pricing-showcase .plan h3 { font-size:clamp(31px,3vw,40px); font-weight:700; letter-spacing:-.035em; line-height:1.06; margin:0 0 12px; }
+.pricing-showcase .intro { color:var(--p-muted); font-size:17px; line-height:1.5; margin:0; max-width:47ch; }
+.pricing-showcase .featured .intro { color:#ddd4eb; }
+.pricing-showcase .price { display:flex; align-items:baseline; flex-wrap:wrap; gap:12px; margin:28px 0 20px; }
+.pricing-showcase .old { color:#81748d; font-size:18px; text-decoration:line-through; }
+.pricing-showcase .featured .old { color:#c0b6d3; }
+.pricing-showcase .price strong { font-size:clamp(43px,4vw,56px); font-weight:700; letter-spacing:-.055em; white-space:nowrap; line-height:1; }
+.pricing-showcase .period { color:var(--p-muted); font-size:17px; }
 .pricing-showcase .featured .period { color:#d7cde8; }
-.pricing-showcase .plan .cta, .pricing-showcase .plan .secondary { font:inherit; border:0; text-decoration:none; text-align:center; }
-.pricing-showcase .cta { display:block; width:100%; border-radius:100px; padding:13px 18px; background:var(--p-deep); color:#fff; font-size:14px !important; font-weight:700 !important; }
+.pricing-showcase .plan .cta, .pricing-showcase .plan .secondary { text-decoration:none; text-align:center; font-family:inherit; }
+.pricing-showcase .cta { display:block; width:100%; border-radius:100px; padding:17px 22px; background:var(--p-deep); color:#fff; font-size:17px; font-weight:700; line-height:1.25; transition:transform .18s ease,opacity .18s ease; }
 .pricing-showcase .featured .cta { background:#fff; color:var(--p-deep); }
-.pricing-showcase .secondary { display:block; align-self:center; color:#5230a8; background:transparent; padding:12px; font-size:13px !important; font-weight:700 !important; }
+.pricing-showcase .cta:hover { transform:translateY(-2px); opacity:.92; }
+.pricing-showcase .secondary { display:block; align-self:center; color:#5230a8; background:transparent; padding:14px 12px 17px; font-size:15px; font-weight:700; }
 .pricing-showcase .featured .secondary { color:var(--p-lime); }
-.pricing-showcase .note { text-align:center; min-height:38px; padding:11px 0 0; color:var(--p-muted); font-size:12px; margin:0; }
-.pricing-showcase .featured .note { color:#d7cde8; }
-.pricing-showcase .details { border-top:1px solid var(--p-line); padding-top:18px; margin-top:5px; }
+.pricing-showcase .secondary:hover { text-decoration:underline; }
+.pricing-showcase .note { text-align:center; min-height:48px; padding:14px 0 0; color:var(--p-muted); font-size:14px; margin:0; }
+.pricing-showcase .details { border-top:1px solid var(--p-line); padding-top:25px; margin-top:5px; }
 .pricing-showcase .featured .details { border-color:#5d4c7c; }
-.pricing-showcase h4 { font-size:11px; letter-spacing:.1em; text-transform:uppercase; margin:0 0 10px; }
-.pricing-showcase ul { padding:0; margin:0 0 18px; list-style:none; }
-.pricing-showcase li { position:relative; padding-left:19px; margin:0 0 8px; font-size:13px; line-height:1.35; }
+.pricing-showcase h4 { font-size:14px; font-weight:700; letter-spacing:.075em; text-transform:uppercase; margin:0 0 15px; }
+.pricing-showcase ul { padding:0; margin:0 0 26px; list-style:none; }
+.pricing-showcase li { position:relative; padding-left:24px; margin:0 0 12px; font-size:16px; line-height:1.4; }
 .pricing-showcase li:before { content:'✓'; position:absolute; left:0; color:#5e2be4; font-weight:800; }
 .pricing-showcase .featured li:before { color:var(--p-lime); }
-.pricing-showcase .foot { font-size:12px; line-height:1.4; color:var(--p-muted); margin:0; }
+.pricing-showcase .foot { font-size:14px; line-height:1.45; color:var(--p-muted); margin:0; padding-top:4px; }
 .pricing-showcase .featured .foot { color:#d7cde8; }
-@media(max-width:700px) { .pricing-showcase { width:calc(100% - 32px); padding:38px 15px; border-radius:18px; } .pricing-showcase .grid { grid-template-columns:1fr; } .pricing-showcase .top { min-height:0; } .pricing-showcase .plan { padding:24px; } }
-
-.pricing-showcase .cta:hover { opacity:.87; }
-.pricing-showcase .secondary:hover { text-decoration:underline; }
+@media(max-width:760px) { .pricing-showcase { width:calc(100% - 32px); padding:50px 20px; border-radius:24px; } .pricing-showcase .grid { grid-template-columns:1fr; } .pricing-showcase .top { min-height:0; } .pricing-showcase .plan { padding:30px; } .pricing-showcase .heading { margin-bottom:36px; } .pricing-showcase .heading>p:last-child { font-size:17px; } }
+@media(max-width:420px) { .pricing-showcase { padding:42px 14px; } .pricing-showcase .plan { padding:27px 23px; } .pricing-showcase .plan h3 { font-size:31px; } .pricing-showcase .intro { font-size:16px; } .pricing-showcase li { font-size:15px; } .pricing-showcase .price strong { font-size:43px; } }
 
 </style>
 
@@ -3728,24 +3727,24 @@ body.works-embed {
   <div class="heading"><p class="eyebrow">Planos criativos mensais</p><h2>O time certo para<br><em>cada fase da sua agência.</em></h2><p>Comece com o que sua demanda pede hoje. Amplie sua produção conforme sua agência cresce.</p></div>
   <div class="grid">
     <article class="plan">
-      <div class="top"><span class="badge">Peças criativas sob demanda</span><h3>Design Essencial</h3><p class="intro">Cards e artes para campanhas, conteúdos e diferentes objetivos da sua agência, sem aumentar a equipe.</p></div>
+      <div class="top"><span class="badge">Peças criativas sob demanda</span><h3>Design Essencial</h3><p class="intro">Peças para todas as demandas da agência: campanhas, anúncios, conteúdos e projetos de clientes, com produção constante sem ampliar a equipe.</p></div>
       <div class="price"><span class="old">R$ 1.200</span><strong>R$ 900</strong><span class="period">/ mês</span></div>
-      <a class="cta" href="https://buy.stripe.com/4gM4gA2BZdw4fQm67hdIA1h" target="_blank" rel="noopener noreferrer">Assine agora →</a><a class="secondary" href="https://pixelclubcreative.com/br/agende-uma-call">Agende uma demonstração</a><div class="details"><h4>O que você pode criar</h4><ul><li>Até 130 cards por mês</li><li>Artes para diferentes projetos e campanhas</li><li>Arquivos editáveis</li></ul><h4>Como o plano funciona</h4><ul><li>Pedidos e revisões ilimitados</li><li>Time e gerente dedicados</li><li>Design em até 2 dias</li></ul><p class="foot">R$ 6,92 por card. Banco de imagens e suporte inclusos.</p></div>
+      <a class="cta" href="https://buy.stripe.com/4gM4gA2BZdw4fQm67hdIA1h" target="_blank" rel="noopener noreferrer">Assine agora →</a><a class="secondary" href="https://pixelclubcreative.com/br/agende-uma-call">Agende uma demonstração</a><div class="details"><h4>O que você pode criar</h4><ul><li>Até 130 cards e artes por mês</li><li>Peças para campanhas, anúncios e conteúdos</li><li>Materiais para diferentes marcas e projetos</li><li>Arquivos editáveis para sua agência</li></ul><h4>Como o plano funciona</h4><ul><li>Pedidos, revisões e marcas ilimitados</li><li>Time de design e gerente dedicados</li><li>Design em até 2 dias</li><li>Sem contrato de permanência</li></ul><p class="foot">R$ 6,92 por card. Banco de imagens, gestão de pedidos e suporte humano inclusos.</p></div>
     </article>
     <article class="plan">
-      <div class="top"><span class="badge">Design e identidade visual</span><h3>Design &amp; Branding</h3><p class="intro">Criativos para campanhas e uma marca consistente em cada ponto de contato.</p></div>
+      <div class="top"><span class="badge">Design e identidade visual</span><h3>Design &amp; Branding</h3><p class="intro">Da identidade visual às peças do dia a dia, mantenha as marcas dos seus clientes consistentes em cada campanha e material.</p></div>
       <div class="price"><span class="old">R$ 2.000</span><strong>R$ 1.700</strong><span class="period">/ mês</span></div>
-      <a class="cta" href="https://buy.stripe.com/dRm4gA2BZfEccEa7bldIA1b" target="_blank" rel="noopener noreferrer">Assine agora →</a><a class="secondary" href="https://pixelclubcreative.com/br/agende-uma-call">Agende uma demonstração</a><div class="details"><h4>O que você pode criar</h4><ul><li>Logos e identidade visual</li><li>Peças para redes sociais e anúncios</li><li>Apresentações e materiais de marketing</li></ul><h4>Como o plano funciona</h4><ul><li>Pedidos e revisões ilimitados</li><li>Time e gerente dedicados</li><li>Design até 2 dias; branding até 3</li></ul><p class="foot">Arquivos editáveis, banco de imagens e suporte inclusos.</p></div>
+      <a class="cta" href="https://buy.stripe.com/dRm4gA2BZfEccEa7bldIA1b" target="_blank" rel="noopener noreferrer">Assine agora →</a><a class="secondary" href="https://pixelclubcreative.com/br/agende-uma-call">Agende uma demonstração</a><div class="details"><h4>O que você pode criar</h4><ul><li>Logos e identidades visuais</li><li>Peças para campanhas e anúncios</li><li>Apresentações e materiais comerciais</li><li>Artes para diferentes marcas e canais</li></ul><h4>Como o plano funciona</h4><ul><li>Pedidos, revisões e marcas ilimitados</li><li>Time de design e gerente dedicados</li><li>Design em até 2 dias; branding em até 3</li><li>Arquivos editáveis e banco de imagens</li></ul><p class="foot">Gestão de pedidos e suporte humano inclusos.</p></div>
     </article>
     <article class="plan featured">
-      <div class="top"><span class="badge">Mais escolhido · Design + vídeo + web</span><h3>Seu time criativo completo</h3><p class="intro">Design, vídeos curtos e páginas em uma só operação, sem coordenar vários freelancers.</p></div>
+      <div class="top"><span class="badge">Mais escolhido · Design + vídeo + web</span><h3>Seu time criativo completo</h3><p class="intro">Sua agência entrega design, vídeo e páginas com um time dedicado. Mais formatos para vender, sem contratar um especialista para cada demanda.</p></div>
       <div class="price"><span class="old">R$ 3.000</span><strong>R$ 2.200</strong><span class="period">/ mês</span></div>
-      <a class="cta" href="https://buy.stripe.com/bJefZi7Wjdw46fMcvFdIA1i" target="_blank" rel="noopener noreferrer">Assine agora →</a><a class="secondary" href="https://pixelclubcreative.com/br/agende-uma-call">Agende uma demonstração</a><div class="details"><h4>Tudo do Design &amp; Branding, mais</h4><ul><li>Vídeos curtos e anúncios em vídeo</li><li>Design e desenvolvimento de landing pages</li><li>Sites, apps e dashboards</li></ul><h4>Como o plano funciona</h4><ul><li>Pedidos e revisões ilimitados</li><li>Time e gerente dedicados</li><li>Vídeos em 1 a 4 dias, conforme escopo</li></ul><p class="foot">Arquivos editáveis, banco de imagens e suporte inclusos.</p></div>
+      <a class="cta" href="https://buy.stripe.com/bJefZi7Wjdw46fMcvFdIA1i" target="_blank" rel="noopener noreferrer">Assine agora →</a><a class="secondary" href="https://pixelclubcreative.com/br/agende-uma-call">Agende uma demonstração</a><div class="details"><h4>Tudo do Design &amp; Branding, mais</h4><ul><li>Edição de vídeos curtos e anúncios</li><li>Design e desenvolvimento de landing pages</li><li>Sites, apps e dashboards</li><li>Peças gráficas e identidade visual</li></ul><h4>Como o plano funciona</h4><ul><li>Pedidos, revisões e marcas ilimitados</li><li>Time criativo e gerente dedicados</li><li>Vídeos em 1 a 4 dias, conforme escopo</li><li>Um fluxo de pedidos para todas as frentes</li></ul><p class="foot">Arquivos editáveis, banco de imagens e suporte humano inclusos.</p></div>
     </article>
     <article class="plan">
-      <div class="top"><span class="badge">Para agências em alto crescimento</span><h3>Escala Criativa</h3><p class="intro">Para a agência que está escalando e precisa de alta produtividade: mais campanhas, clientes e entregas avançando ao mesmo tempo.</p></div>
+      <div class="top"><span class="badge">Para agências em alto crescimento</span><h3>Escala Criativa</h3><p class="intro">Para agências em alto crescimento que precisam produzir em várias frentes: mais campanhas, mais clientes e duas demandas avançando ao mesmo tempo.</p></div>
       <div class="price"><span class="old">R$ 4.000</span><strong>R$ 3.000</strong><span class="period">/ mês</span></div>
-      <a class="cta" href="https://pixelclubcreative.com/br/agende-uma-call">Agende uma demonstração →</a><p class="note">Vamos dimensionar a produção para sua agência.</p><div class="details"><h4>Tudo do plano completo, mais</h4><ul><li>2 pedidos ativos ao mesmo tempo</li><li>1 vídeo + 1 tarefa de design ou dev</li><li>Vídeos de produto, tutoriais e animações</li></ul><h4>Como o plano funciona</h4><ul><li>Pedidos e revisões ilimitados</li><li>Time e gerente dedicados</li><li>Mais capacidade para alta demanda</li></ul><p class="foot">Volume de entregas depende do escopo de cada pedido.</p></div>
+      <a class="cta" href="https://pixelclubcreative.com/br/agende-uma-call">Agende uma demonstração →</a><p class="note">Vamos dimensionar a produção para sua agência.</p><div class="details"><h4>Tudo do plano completo, mais</h4><ul><li>2 pedidos ativos ao mesmo tempo</li><li>1 vídeo + 1 demanda de design ou dev</li><li>Vídeos de produto, tutoriais e animações</li><li>Design, marcas, páginas e desenvolvimento</li></ul><h4>Como o plano funciona</h4><ul><li>Pedidos, revisões e marcas ilimitados</li><li>Time criativo e gerente dedicados</li><li>Produção em paralelo para alta demanda</li><li>Prioridades organizadas em uma fila</li></ul><p class="foot">O volume de entregas varia com o escopo de cada pedido.</p></div>
     </article>
   </div>
 </section>
