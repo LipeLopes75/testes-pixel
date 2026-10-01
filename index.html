@@ -3418,6 +3418,31 @@ body.works-embed {
 @media(max-width:760px) { .pricing-showcase { width:calc(100% - 32px); padding:50px 20px; border-radius:24px; } .pricing-showcase .grid { grid-template-columns:1fr; } .pricing-showcase .top { min-height:0; } .pricing-showcase .plan { padding:30px; } .pricing-showcase .heading { margin-bottom:36px; } .pricing-showcase .heading>p:last-child { font-size:17px; } }
 @media(max-width:420px) { .pricing-showcase { padding:42px 14px; } .pricing-showcase .plan { padding:27px 23px; } .pricing-showcase .plan h3 { font-size:31px; } .pricing-showcase .intro { font-size:16px; } .pricing-showcase li { font-size:15px; } .pricing-showcase .price strong { font-size:43px; } }
 
+
+/* Keep the identity title on two complete lines across screen sizes. */
+.bento__card--identity .bento__text h3 {
+  font-size: clamp(26px, 3.3vw, 46px);
+  line-height: 1.05;
+  letter-spacing: -0.8px;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+.bento__card--identity .bento__title-line {
+  display: block;
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .bento__card--identity .bento__text h3 {
+    font-size: clamp(18px, 5.4vw, 36px);
+  }
+}
+@media (max-width: 520px) {
+  .bento__card--identity {
+    padding-inline: 18px;
+  }
+}
+
 </style>
 
 </head>
@@ -3574,12 +3599,12 @@ body.works-embed {
         </div>
       </article>
 
-      <article class="bento__card bento__card--col3" style="--card-bg:#F1E9FB">
+      <article class="bento__card bento__card--col3 bento__card--identity" style="--card-bg:#F1E9FB">
         <span class="bento__badge" aria-hidden="true">
           <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yMy4zNzAzIDE1LjkxMTNMMjAuNDAwOCAxMi45NDAxQzIwLjI4MTMgMTIuODIyNSAyMC4xOTYyIDEyLjY3NDMgMjAuMTU0NyAxMi41MTE4TDE4LjQwMjMgNS41MDczNkMxOC4xODQ1IDQuNjM1OTIgMTcuNzE3MiAzLjg0Njk2IDE3LjA1NzggMy4yMzcyMkMxNi4zOTgzIDIuNjI3NDcgMTUuNTc1MiAyLjIyMzQ1IDE0LjY4OTUgMi4wNzQ2N0wyLjQ4NjY3IDAuMDI2NjI5NkMyLjE2MjU3IC0wLjAyNTE5OSAxLjgzMDg3IC0wLjAwMTE1NzEyIDEuNTE3NjIgMC4wOTY4NjYxQzEuMjA0MzggMC4xOTQ4ODkgMC45MTgxMjMgMC4zNjQyMjQgMC42ODEzNTUgMC41OTE1NjVDMC42NjQxMjYgMC42MDYzMzQgMC42NDMyMDYgMC42MTI0ODggMC42MjcyMDggMC42Mjg0ODhDMC42MTEyMSAwLjY0NDQ4OSAwLjYwNTA1NyAwLjY2NjY0MyAwLjU5MDI4OSAwLjY4Mzg3NEMwLjM2MzI3MyAwLjkyMTg1OCAwLjE5NDI5MiAxLjIwOTA3IDAuMDk2NTI2NSAxLjUyMzEyQy0wLjAwMTIzOTQxIDEuODM3MTcgLTAuMDI1MTQ4IDIuMTY5NTYgMC4wMjY2NjU3IDIuNDk0MzdMMi4wNzMxOSAxNC42OTI4QzIuMjIzMTggMTUuNTc4NCAyLjYyODI3IDE2LjQwMDkgMy4yMzg3OSAxNy4wNTk2QzMuODQ5MzIgMTcuNzE4MyA0LjYzODc1IDE4LjE4NDYgNS41MTAzIDE4LjQwMTJMMTIuNTEzOCAyMC4xNTI2QzEyLjY3NjUgMjAuMTk0MyAxMi44MjQ5IDIwLjI3OTQgMTIuOTQzMiAyMC4zOTg3TDE1LjkxMjcgMjMuMzY4N0MxNi4xMTI1IDIzLjU2ODggMTYuMzQ5OCAyMy43Mjc2IDE2LjYxMSAyMy44MzU5QzE2Ljg3MjIgMjMuOTQ0MiAxNy4xNTIyIDI0IDE3LjQzNSAyNEMxNy43MTc4IDI0IDE3Ljk5NzggMjMuOTQ0MiAxOC4yNTkgMjMuODM1OUMxOC41MjAyIDIzLjcyNzYgMTguNzU3NSAyMy41Njg4IDE4Ljk1NzMgMjMuMzY4N0wyMy4zNzAzIDE4Ljk1NjNDMjMuNzczNSAxOC41NTIyIDI0IDE4LjAwNDYgMjQgMTcuNDMzOEMyNCAxNi44NjI5IDIzLjc3MzUgMTYuMzE1MyAyMy4zNzAzIDE1LjkxMTNaTTMuODk5NDIgMTQuMzg2M0wyLjA0NjExIDMuMzQ4NTVMNy43NzgzNCA5LjA4MDM2QzcuNzM3NjIgOS4yMzAwNSA3LjcxNjEyIDkuMzg0MzIgNy43MTQzNCA5LjUzOTQ0QzcuNzE0MzQgOS45MDQ1OSA3LjgyMjYgMTAuMjYxNSA4LjAyNTQ0IDEwLjU2NTFDOC4yMjgyNyAxMC44Njg3IDguNTE2NTcgMTEuMTA1NCA4Ljg1Mzg3IDExLjI0NTFDOS4xOTExNiAxMS4zODQ4IDkuNTYyMzIgMTEuNDIxNCA5LjkyMDM5IDExLjM1MDJDMTAuMjc4NSAxMS4yNzg5IDEwLjYwNzQgMTEuMTAzMSAxMC44NjU1IDEwLjg0NDlDMTEuMTIzNyAxMC41ODY3IDExLjI5OTUgMTAuMjU3NyAxMS4zNzA3IDkuODk5NjJDMTEuNDQyIDkuNTQxNDkgMTEuNDA1NCA5LjE3MDI4IDExLjI2NTcgOC44MzI5NEMxMS4xMjYgOC40OTU1OSAxMC44ODk0IDguMjA3MjUgMTAuNTg1OCA4LjAwNDM5QzEwLjI4MjMgNy44MDE1MyA5LjkyNTM2IDcuNjkzMjUgOS41NjAyNyA3LjY5MzI1SDkuNTQ3OTdDOS4zODUxIDcuNjk1MzkgOS4yMjMyNiA3LjcxOTQgOS4wNjY3OSA3Ljc2NDY0TDMuMzUxOCAyLjA0MzlMMTQuMzg4IDMuODk2MjVDMTQuOTE5NyAzLjk4NDg1IDE1LjQxMzkgNC4yMjY5NyAxNS44MDk5IDQuNTkyOEMxNi4yMDU5IDQuOTU4NjQgMTYuNDg2MyA1LjQzMjI0IDE2LjYxNjYgNS45NTUzN0wxOC4zNjUzIDEyLjk0ODdMMTIuOTUwNiAxOC4zNjQyTDUuOTU4MjUgMTYuNjE2NUM1LjQzNTI1IDE2LjQ4NTYgNC45NjE4MyAxNi4yMDQ4IDQuNTk2MSAxNS44MDg3QzQuMjMwMzggMTUuNDEyNSAzLjk4ODI0IDE0LjkxODIgMy44OTk0MiAxNC4zODYzWk0yMi4wNjU4IDE3LjY1MTZMMTcuNjUyOCAyMi4wNjUyQzE3LjYyOTIgMjIuMTAxMyAxNy41OTcgMjIuMTMwOSAxNy41NTkxIDIyLjE1MTRDMTcuNTIxMSAyMi4xNzE5IDE3LjQ3ODcgMjIuMTgyNiAxNy40MzU2IDIyLjE4MjZDMTcuMzkyNSAyMi4xODI2IDE3LjM1MDEgMjIuMTcxOSAxNy4zMTIyIDIyLjE1MTRDMTcuMjc0MyAyMi4xMzA5IDE3LjI0MiAyMi4xMDEzIDE3LjIxODQgMjIuMDY1MkwxNC41Mzk0IDE5LjM4NThMMTkuMzg2OCAxNC41Mzc3TDIyLjA2NTggMTcuMjE1OUMyMi4xMjMxIDE3LjI3NCAyMi4xNTUyIDE3LjM1MjIgMjIuMTU1MiAxNy40MzM4QzIyLjE1NTIgMTcuNTE1MyAyMi4xMjMxIDE3LjU5MzYgMjIuMDY1OCAxNy42NTE2WiIgZmlsbD0iIzI1MUMzRSIvPg0KPC9zdmc+DQo=" alt="">
         </span>
         <div class="bento__text">
-          <h3>Identidade<br>Visual</h3>
+          <h3><span class="bento__title-line">Identidade</span><span class="bento__title-line">Visual</span></h3>
           <p>Logos, manual de marca e identidade visual que fazem você ser reconhecido na hora.</p>
         </div>
       </article>
